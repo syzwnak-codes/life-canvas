@@ -1,0 +1,2 @@
+GET http://localhost:8080/api/vision-board/test
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzeWF6d2luYUBleGFtcGxlLmNvbSIsImlhdCI6MTc2Nzk4NzU4NywiZXhwIjoxNzY4MDczOTg3fQ.qTttzPRVU8zyNbwST69Zbp6woF3y2ANLtI7LlpilGDY
