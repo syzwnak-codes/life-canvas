@@ -17,7 +17,7 @@ export default function Login() {
     try {
       const res = await axios.post("/auth/login", form);
       login({ name: res.data.name, email: res.data.email }, res.data.token);
-      navigate("/home");
+      navigate("/vision");
     } catch (err) {
       setError(err.response?.data || "Login failed");
     }

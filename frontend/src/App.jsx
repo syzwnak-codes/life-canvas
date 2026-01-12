@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import { AuthProvider, AuthContext } from "./context/AuthContext";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
-import Home from "./pages/Home";
+import Home from "./pages/VisionBoard";
+import VisionBoard from "./pages/VisionBoard";
 
 function ProtectedRoute({ children }) {
   const { auth } = React.useContext(AuthContext);
@@ -18,7 +19,7 @@ export default function App() {
           <Route path="/" element={<Navigate to="/login" />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
+          <Route path="/vision" element={<ProtectedRoute><VisionBoard /></ProtectedRoute>} />
         </Routes>
       </Router>
     </AuthProvider>
